@@ -1,6 +1,6 @@
-# MountainBikersNet
+# TailNetwork
 
-MountainBikersNet is a social networking platform specifically designed for mountain bikers to connect, share their experiences, and explore new trails. The platform allows users to create profiles, connect with other mountain bikers, share their ride experiences, post pictures and videos, and discover new trails based on location and user recommendations.
+TailNetwork is a social networking platform specifically designed for mountain bikers to connect, share their experiences, and explore new trails. The platform allows users to create profiles, connect with other mountain bikers, share their ride experiences, post pictures and videos, and discover new trails based on location and user recommendations.
 
 ## Features
 
