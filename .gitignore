@@ -1,2 +1,51 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Gradle build files
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot application output
+out/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# macOS files
 .DS_Store
-.idea
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.swo
+
+# Node.js files
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+yarn.lock
+yarn-integrity
+
+# Vue.js build output
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# End of .gitignore
