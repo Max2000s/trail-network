@@ -11,7 +11,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongodb-data:/data/db
+      - mongodb-data:/data/db # named volume and no bind mount for easier development as well as deployment
 
   trailnetwork:
     build: ./TrailNetwork
@@ -23,5 +23,12 @@ services:
     environment:
       SPRING_DATA_MONGODB_URI: mongodb://root:example@mongodb:27017/trailnetwork
 
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "80:80"
+    #depends_on:
+     # - trailnetwork
 volumes:
   mongodb-data:
