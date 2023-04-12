@@ -1,6 +1,11 @@
+package com.myapp.trailnetwork.service;
+
 import com.myapp.trailnetwork.model.User;
 import com.myapp.trailnetwork.repository.UserRepository;
+
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService {
@@ -10,6 +15,10 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
+    public List<User> findAll() {
+        return null;
+
+    }
     public User createUser(String username, String email, String password) {
         User newUser = new User();
         newUser.setUsername(username);
