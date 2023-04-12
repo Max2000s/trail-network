@@ -19,6 +19,10 @@ public class TrailController {
     public List<Trail> getAllTrails() {
         return trailService.findAll();
     }
+    @PutMapping
+    public Trail createTrail() {
+        
+    }
 
     // Add more request mappings for other CRUD operations
 }
