@@ -6,6 +6,7 @@ import com.myapp.trailnetwork.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -18,6 +19,9 @@ public class UserService {
     public List<User> findAll() {
         return null;
 
+    }
+    public Optional<User> findById(String id) {
+        return userRepository.findById(id);
     }
     public User createUser(String username, String email, String password) {
         User newUser = new User();
@@ -34,6 +38,10 @@ public class UserService {
             return userRepository.save(existingUser);
         }
         return null;
+    }
+
+    public void deleteById(String id) {
+        userRepository.deleteById(id);
     }
 }
 
