@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo"  src="./assets/pic.png">
-  <HelloWorld msg="Welcome to TrailNetwork"/>
+    <div id="app">
+        <header>
+            <!-- Global header content, such as logo and navigation -->
+        </header>
+
+        <router-view></router-view>
+
+        <footer>
+            <!-- Global footer content, such as copyright and social media links -->
+        </footer>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name: "App",
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Global styles for your application */
 </style>
